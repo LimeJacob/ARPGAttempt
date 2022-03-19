@@ -48,12 +48,12 @@ public class Equippable : MonoBehaviour
     public void OnChangeFrom() 
     {
         foreach (StatModifier modifier in Mods)
-            modifier.Activate();
+            modifier.Apply();
     }
     public void OnChangeTo() 
     {
         foreach (StatModifier modifier in Mods)
-            modifier.DeActivate();
+            modifier.Remove();
     }
 }
 
