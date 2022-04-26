@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Stick
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: IdleD
+    m_Hash: 259229022
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: -306787472437928336, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - m_Name: AtkD
+    m_Hash: -1498671315
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: 5753333257145404389, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: -2744511539282791579, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - m_Name: IdleH
+    m_Hash: 113625461
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: -8388626145965365438, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - m_Name: AtkH
+    m_Hash: -1357227258
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: -3891802974388200075, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 6875256176610837924, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - m_Name: IdleU
+    m_Hash: 1707320748
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: -8963798546968690501, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - m_Name: AtkU
+    m_Hash: -870565921
+    m_CategoryList:
+    - m_Name: 1
+      m_Hash: -2082672713
+      m_Sprite: {fileID: 753938487990578926, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+    - m_Name: 2
+      m_Hash: 450215437
+      m_Sprite: {fileID: 2023944546237197952, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  m_ModificationHash: 0
