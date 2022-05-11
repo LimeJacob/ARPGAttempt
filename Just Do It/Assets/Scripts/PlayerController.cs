@@ -1,11 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-using System.Reflection;
-using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,10 +13,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private bool gaurd;
     [SerializeField] private bool interact;
 
+    private float attackCooldown = 0f;
+
     [SerializeField] private Stats stats;
+    [SerializeField] private EquipmentManager equipmentManager;
 
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] private PlayerAnimations animations = new PlayerAnimations();
+
+    PlayerState state = PlayerState.Idle;
 
     // Start is called before the first frame update
     void Start()
@@ -31,52 +33,69 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vertical = Input.GetAxis("Vertical");
-        horizontal = Input.GetAxis("Horizontal");
-
-        attack = Input.GetButtonDown("Attack");
-        gaurd = Input.GetButtonDown("Gaurd");
-        interact = Input.GetButtonDown("Interact");
+        GetInputs();
 
         animations.Update(vertical, horizontal);
+
+        switch (state) 
+        {
+            case PlayerState.Attacking:
+                attackCooldown -= Time.deltaTime;
+                if (attackCooldown <= 0) SetState(PlayerState.Idle);
+                break;
+            case PlayerState.Gaurding:
+
+                break;
+            case PlayerState.Idle:
+                if (gaurd) {
+                    equipmentManager.Animators.Shield.SetTrigger("Gaurding");
+                } 
+                else if (attack)
+                {
+                    equipmentManager.Animators.Weapon.SetTrigger("Attacking");
+                    equipmentManager.GetWeapon().Attack();
+                }
+                break;
+        }
     }
 
     private void FixedUpdate()
     {
+        switch (state)
+        {
+            case PlayerState.Attacking:
+                Movement();
+                break;
+            case PlayerState.Gaurding:
+                break;
+            case PlayerState.Idle:
+                Movement();
+                break;
+        }        
+    }
+
+    private void GetInputs() 
+    {
+        vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis("Horizontal");
+        attack = Input.GetButton("Attack");
+        gaurd = Input.GetButton("Gaurd");
+        interact = Input.GetButtonDown("Interact");
+    }
+
+    public void Movement()
+    {
         rigidBody.velocity = stats.Speed.GetValue() * new Vector2(horizontal, vertical);
     }
-}
 
-[System.Serializable]
-public class PlayerAnimations
-{
-    [SerializeField] private List<Animator> animators;
-
-    [Range(0f, 1f)]
-    [SerializeField]
-    private float verticalThreshold;
-
-    [Range(0f, 1f)]
-    [SerializeField]
-    private float horizontalThreshold;
-
-    public void Update(float vertical, float horizontal)
+    public void SetState(PlayerState playerState) 
     {
-        foreach (var animator in animators) 
-        {
-            animator.SetInteger("Horizontal", GetHorizontal(horizontal));
-            animator.SetInteger("Vertical", GetVertical(vertical));
-        }
-    }
-    private int GetHorizontal(float raw)
-    {
-        if (Mathf.Abs(raw) > horizontalThreshold) return Math.Sign(raw);
-        else return 0;
+        state = playerState;
     }
 
-    private int GetVertical(float raw)
+    public void SetAttackCooldown(float cooldown) 
     {
-        if (Mathf.Abs(raw) > verticalThreshold) return Math.Sign(raw);
-        else return 0;
+        attackCooldown = cooldown;
     }
+    public Direction GetDirection() => animations.Dir;
 }
