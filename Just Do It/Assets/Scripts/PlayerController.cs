@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
 
     private float attackCooldown = 0f;
 
-    [SerializeField] private Stats stats;
     [SerializeField] private EquipmentManager equipmentManager;
 
     [SerializeField] private Rigidbody2D rigidBody;
@@ -26,7 +25,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        stats = GetComponent<Stats>();
         rigidBody = GetComponent<Rigidbody2D>();
     }
      
