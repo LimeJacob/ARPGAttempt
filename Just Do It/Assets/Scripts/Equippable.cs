@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Equippable : MonoBehaviour
 {
+    [SerializeField] public List<StatModifier> Mods { get; }
     [SerializeField] public string Name { get; private set; }
     [SerializeField] private Sprite itemSprite;
 
@@ -10,12 +11,12 @@ public class Equippable : MonoBehaviour
 
     public void OnChangeFrom() 
     {
-        // Apply New Stats
+        foreach (StatModifier modifier in Mods)
+            modifier.Apply();
     }
     public void OnChangeTo() 
     {
-        // Remove Old Stats
-
-        //Suggested: Create class that can have apply and remove called on it for each attribute.
+        foreach (StatModifier modifier in Mods)
+            modifier.Remove();
     }
 }
