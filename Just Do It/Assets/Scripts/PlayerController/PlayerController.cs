@@ -52,12 +52,13 @@ public class PlayerController : MonoBehaviour
                 {
                     rigidBody.drag = 3f;
                     state = PlayerState.Idle;
+                    equipmentManager.Animators.Shield.SetBool("Gaurding", false);
                 }
                 break;
             case PlayerState.Idle:
                 animations.Update(vertical, horizontal, false);
                 if (gaurd) {
-                    equipmentManager.Animators.Shield.SetTrigger("Gaurding");
+                    equipmentManager.Animators.Shield.SetBool("Gaurding", true);
                     state = PlayerState.Gaurding;
                     rigidBody.drag = 7f;
                 } 
