@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SwordLibrary
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[0].m_Name
+    value: IdleD
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[0].m_Hash
+    value: 259229022
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[0].m_CategoryList.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[0].m_CategoryList.Array.data[0].m_Name
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[0].m_CategoryList.Array.data[0].m_Hash
+    value: -2082672713
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[0].m_CategoryList.Array.data[0].m_Sprite
+    value: 
+    objectReference: {fileID: -306787472437928336, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_Name
+    value: AtkD
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_Hash
+    value: -1498671315
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_CategoryList.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_CategoryList.Array.data[0].m_Name
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_CategoryList.Array.data[0].m_Hash
+    value: -2082672713
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_CategoryList.Array.data[0].m_Sprite
+    value: 
+    objectReference: {fileID: 5753333257145404389, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_CategoryList.Array.data[1].m_Name
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_CategoryList.Array.data[1].m_Hash
+    value: 450215437
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[1].m_CategoryList.Array.data[1].m_Sprite
+    value: 
+    objectReference: {fileID: -2744511539282791579, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[2].m_Name
+    value: IdleH
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[2].m_Hash
+    value: 113625461
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[2].m_CategoryList.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[2].m_CategoryList.Array.data[0].m_Name
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[2].m_CategoryList.Array.data[0].m_Hash
+    value: -2082672713
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[2].m_CategoryList.Array.data[0].m_Sprite
+    value: 
+    objectReference: {fileID: -8388626145965365438, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_Name
+    value: AtkH
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_Hash
+    value: -1357227258
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_CategoryList.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_CategoryList.Array.data[0].m_Name
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_CategoryList.Array.data[0].m_Hash
+    value: -2082672713
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_CategoryList.Array.data[0].m_Sprite
+    value: 
+    objectReference: {fileID: -3891802974388200075, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_CategoryList.Array.data[1].m_Name
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_CategoryList.Array.data[1].m_Hash
+    value: 450215437
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[3].m_CategoryList.Array.data[1].m_Sprite
+    value: 
+    objectReference: {fileID: 6875256176610837924, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[4].m_Name
+    value: IdleU
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[4].m_Hash
+    value: 1707320748
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[4].m_CategoryList.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[4].m_CategoryList.Array.data[0].m_Name
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[4].m_CategoryList.Array.data[0].m_Hash
+    value: -2082672713
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[4].m_CategoryList.Array.data[0].m_Sprite
+    value: 
+    objectReference: {fileID: -8963798546968690501, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_Name
+    value: AtkU
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_Hash
+    value: -870565921
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_CategoryList.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_CategoryList.Array.data[0].m_Name
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_CategoryList.Array.data[0].m_Hash
+    value: -2082672713
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_CategoryList.Array.data[0].m_Sprite
+    value: 
+    objectReference: {fileID: 753938487990578926, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_CategoryList.Array.data[1].m_Name
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_CategoryList.Array.data[1].m_Hash
+    value: 450215437
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Labels.Array.data[5].m_CategoryList.Array.data[1].m_Sprite
+    value: 
+    objectReference: {fileID: 2023944546237197952, guid: d2506aeb8e0a7904e8c090e64820d919, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_ModificationHash
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
