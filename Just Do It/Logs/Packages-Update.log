@@ -59,3 +59,11 @@ The following packages were updated:
   com.unity.ide.rider from version 2.0.7 to 3.0.13
   com.unity.ide.vscode from version 1.2.4 to 1.2.5
   com.unity.timeline from version 1.4.8 to 1.6.4
+
+=== Sat May 14 01:04:10 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.15.15 to 1.15.16

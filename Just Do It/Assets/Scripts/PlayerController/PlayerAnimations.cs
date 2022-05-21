@@ -12,6 +12,7 @@ public class PlayerAnimations
     public Direction Dir { get => direction; }
     
     [SerializeField] private List<Animator> animators;
+    [SerializeField] private Animator legs;
 
     [Range(0f, 1f)]
     [SerializeField]
@@ -21,7 +22,7 @@ public class PlayerAnimations
     [SerializeField]
     private float horizontalThreshold;
 
-    public void Update(float vertical, float horizontal)
+    public void Update(float vertical, float horizontal, bool allowWalking)
     {
         var horiz = GetHorizontal(horizontal);
         var vert = GetVertical(vertical);
@@ -30,7 +31,7 @@ public class PlayerAnimations
             animator.SetInteger("Horizontal", horiz);
             animator.SetInteger("Vertical", vert);
         }
-
+        legs.SetBool("NoWalk", allowWalking);
         if (horiz == 1) 
         { direction = Direction.Right; }
         else if (horiz == -1) 
