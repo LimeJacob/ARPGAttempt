@@ -4,18 +4,18 @@
 public class EquipSlots 
 {
     [SerializeField]
-    private WeaponSlot weaponSlot;
+    private WeaponSlot weapon;
     [SerializeField]
-    private ShieldSlot shieldSlot;
+    private ShieldSlot shield;
     [SerializeField]
-    private HelmetSlot helmetSlot;
+    private HelmetSlot helmet;
     [SerializeField]
-    private ArmorSlot armorSlot;
+    private ArmorSlot armor;
     [SerializeField]
-    private LeggingSlot leggingSlot;
-    public WeaponSlot Weapon { get => weaponSlot; }
-    public ShieldSlot Shield { get => shieldSlot; }
-    public HelmetSlot Helmet { get => helmetSlot; }
-    public ArmorSlot Armor { get => armorSlot; }
-    public LeggingSlot Leggings { get => leggingSlot; }
+    private LeggingSlot leggings;
+    public WeaponSlot Weapon { get => weapon; set { weapon = value; } }
+    public ShieldSlot Shield { get => shield; set { shield = value; } }
+    public HelmetSlot Helmet { get => helmet; set { helmet = value; } }
+    public ArmorSlot Armor { get => armor; set { armor = value; } }
+    public LeggingSlot Leggings { get => leggings; set { leggings = value; } }
 }

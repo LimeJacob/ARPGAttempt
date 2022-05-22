@@ -8,4 +8,9 @@ public class EquipSlot<T> : MonoBehaviour
     T item;
 
     public T GetItem() => item;
+
+    private void Start()
+    {
+        item = GetComponentInChildren<T>();
+    }
 }

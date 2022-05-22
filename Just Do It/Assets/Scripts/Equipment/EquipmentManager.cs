@@ -14,13 +14,18 @@ public class EquipmentManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slots.Weapon.GetItem().OnEquip(player, sprlibraries.Weapon);
-    }
+        player = GameObject.Find("PlayerCharacter").GetComponent<PlayerController>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        animators.Shield = GameObject.Find("ShieldAnimator").GetComponent<Animator>();
+        animators.Weapon = GameObject.Find("WeaponAnimator").GetComponent<Animator>();
+
+        slots.Leggings = GetComponentInChildren<LeggingSlot>();
+        slots.Armor = GetComponentInChildren<ArmorSlot>();
+        slots.Helmet = GetComponentInChildren<HelmetSlot>();
+        slots.Weapon = GetComponentInChildren<WeaponSlot>();
+        slots.Shield = GetComponentInChildren<ShieldSlot>();
+
+        slots.Weapon.GetItem().OnEquip(player, sprlibraries.Weapon);
     }
 
     public Weapon GetWeapon() => slots.Weapon.GetItem();

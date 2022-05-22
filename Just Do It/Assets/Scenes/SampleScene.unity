@@ -838,17 +838,17 @@ MonoBehaviour:
     weapon: {fileID: 2034630807}
     shield: {fileID: 1190484998}
   slots:
-    weaponSlot: {fileID: 1880166977}
-    shieldSlot: {fileID: 1758605430}
-    helmetSlot: {fileID: 1729132233}
-    armorSlot: {fileID: 1981198324}
-    leggingSlot: {fileID: 889262196}
+    weapon: {fileID: 0}
+    shield: {fileID: 0}
+    helmet: {fileID: 0}
+    armor: {fileID: 0}
+    leggings: {fileID: 0}
   sprlibraries:
     weapon: {fileID: 2034630809}
-    shield: {fileID: 1190485000}
-    armor: {fileID: 2003457958}
-    leggings: {fileID: 1641200222}
-    helmet: {fileID: 1169527452}
+    shield: {fileID: 0}
+    armor: {fileID: 0}
+    leggings: {fileID: 0}
+    helmet: {fileID: 0}
 --- !u!1 &889262194
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,17 +963,6 @@ Transform:
   m_Father: {fileID: 1547000412}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1169527452 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1601197230, guid: 6f28200fd73999f45ae1c7296f188639, type: 3}
-  m_PrefabInstance: {fileID: 6817241409187620251}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1190484995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,7 +1463,7 @@ MonoBehaviour:
   EquipEffectList: {fileID: 1148703604}
   EquipEffect: []
   itemSprite: {fileID: 0}
-  cooldownTime: 0.51
+  cooldownTime: 0.11
   slash: {fileID: 5451843785863854278, guid: dede65f56701a7f498b974973b7a2491, type: 3}
 --- !u!1 &1611236235
 GameObject:
@@ -1518,17 +1507,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 6588155709818746135, guid: eb3cc8319cb03ec4c867c47458707f1f, type: 3}
   m_PrefabInstance: {fileID: 6588155708219821899}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1641200222 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6588155709818746133, guid: eb3cc8319cb03ec4c867c47458707f1f, type: 3}
-  m_PrefabInstance: {fileID: 6588155708219821899}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1647901851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,7 +1896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vulnerabilities: []
-  maxHealth: 10971
+  maxHealth: 0
   health: 0
 --- !u!1 &1875275924
 GameObject:
@@ -2221,17 +2199,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 33454697741119975, guid: 70ce803f09bdfb240981921e2010c551, type: 3}
   m_PrefabInstance: {fileID: 33454697382094403}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2003457958 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2003457959, guid: 70ce803f09bdfb240981921e2010c551, type: 3}
-  m_PrefabInstance: {fileID: 33454697382094403}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2019982694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2265,7 +2232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed:
-    baseValue: 7
+    baseValue: 9
     baseMultiplier: 1
 --- !u!114 &2019982696
 MonoBehaviour:
@@ -2285,20 +2252,20 @@ MonoBehaviour:
   gaurd: 0
   interact: 0
   maxSpeed: 0
-  stats: {fileID: 0}
+  stats: {fileID: 2019982695}
   equipmentManager: {fileID: 817869379}
-  rigidBody: {fileID: 0}
+  rigidBody: {fileID: 2019982699}
   animations:
     animators:
     - {fileID: 232756236}
     - {fileID: 2003457956}
     - {fileID: 1641200220}
-    - {fileID: 1190484998}
     - {fileID: 2034630807}
+    - {fileID: 1190484998}
     - {fileID: 2031187029}
     legs: {fileID: 1641200220}
-    verticalThreshold: 0
-    horizontalThreshold: 0.209
+    verticalThreshold: 0.192
+    horizontalThreshold: 0.108
   movement:
     prevVert: 0
     prevHor: 0

@@ -7,6 +7,6 @@ public class EquipAnimators
     Animator weapon;
     [SerializeField]
     Animator shield;
-    public Animator Weapon { get => weapon; }
-    public Animator Shield { get => shield; }
+    public Animator Weapon { get => weapon; set { weapon = value; } }
+    public Animator Shield { get => shield; set { weapon = value; } }
 }

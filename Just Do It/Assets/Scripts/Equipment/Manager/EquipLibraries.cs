@@ -15,9 +15,9 @@ public class EquipLibraries
     [SerializeField]
     SpriteLibrary helmet;
 
-    public SpriteLibrary Weapon { get => weapon; }
-    public SpriteLibrary Shield { get => shield; }
-    public SpriteLibrary Armor { get => armor; }
-    public SpriteLibrary Leggings { get => leggings; }
-    public SpriteLibrary Helmet { get => helmet; }
+    public SpriteLibrary Weapon { get => weapon; set { weapon = value; } }
+    public SpriteLibrary Shield { get => shield; set { shield = value; } }
+    public SpriteLibrary Armor { get => armor; set { armor = value; } }
+    public SpriteLibrary Leggings { get => leggings; set { leggings = value; } }
+    public SpriteLibrary Helmet { get => helmet; set { helmet = value; } }
 }
